@@ -23,10 +23,12 @@ class MenuScene extends BaseScene {
     console.log(this);
     textGO.on('pointerover', () => {
       textGO.setStyle({ fill: '#ff0' });
+      textGO.setScale(1.1);
     });
 
     textGO.on('pointerout', () => {
       textGO.setStyle({ fill: '#fff' });
+      textGO.setScale(1);
     });
 
     textGO.on('pointerup', () => {
