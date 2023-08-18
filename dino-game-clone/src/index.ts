@@ -5,7 +5,7 @@ import PlayScene from './scenes/PlayScene';
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
   width: 1000,
-  height: 500,
+  height: 340,
   pixelArt: true,
   transparent: true, // 배경색 없음
   physics: {
