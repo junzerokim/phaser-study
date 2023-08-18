@@ -31,6 +31,18 @@ export class Player extends Phaser.Physics.Arcade.Sprite {
     if (isSpaceJustDown && onFloor) {
       this.setVelocityY(-1600);
     }
+
+    if (!(this.scene as any).isGameRunning) {
+      return;
+    }
+
+    if (this.body.deltaAbsY() > 0) {
+      this.anims.stop();
+      this.setTexture('dino-run', 0); // 점프할 때 첫번쨰 프레임으로 돌아간다.
+    } else {
+      // console.log('running');
+      this.playRunAnimation();
+    }
   }
 
   playRunAnimation() {
