@@ -28,7 +28,7 @@ export class Player extends Phaser.Physics.Arcade.Sprite {
 
     // console.log(isSpaceJustDown);
 
-    if (isSpaceJustDown) {
+    if (isSpaceJustDown && onFloor) {
       this.setVelocityY(-1600);
     }
   }
