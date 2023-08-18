@@ -81,6 +81,3 @@ temp/
 
 dist/
 build/
-
-# Mac Files
-.DS_Store
